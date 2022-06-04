@@ -10,7 +10,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        client({method: 'GET', path: '/api/memers/all'}).done(response => {
+        client({method: 'GET', path: '/api/memers/'}).done(response => {
             this.setState({memers: response.entity._embedded.memers});
         });
     }

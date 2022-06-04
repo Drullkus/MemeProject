@@ -18,5 +18,7 @@ public class DatabaseLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         this.repository.save(new Memer("DrullsTestUser"));
+
+        MemeApplication.LOGGER.info("User Repo Count: " + this.repository.count());
     }
 }

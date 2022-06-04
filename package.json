@@ -1,7 +1,7 @@
 {
   "name": "MemeProject",
   "scripts": {
-    "watch": "webpack --watch -d --output ./build/classes/static/built/bundle.js",
+    "watch": "webpack -d --output ./build/classes/static/built/bundle.js",
     "build": "echo Building frontend",
     "check": "echo Checking frontend && npm run lint && npm run test",
     "clean": "echo Cleaning frontend",
